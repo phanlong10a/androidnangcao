@@ -11,7 +11,7 @@
     android:padding="10dp">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/album_art_layout"
+        android:id="@+id/album_art_layout_online"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -22,7 +22,7 @@
         app:rippleColor="?colorPrimary">
 
         <ImageView
-            android:id="@+id/album_art"
+            android:id="@+id/album_art_online"
             android:layout_width="match_parent"
             android:layout_height="124dp"
             android:adjustViewBounds="true"
@@ -33,7 +33,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
-        android:id="@+id/song_history"
+        android:id="@+id/song_history_online"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -44,10 +44,10 @@
         android:textSize="@dimen/text_medium" />
 
     <TextView
-        android:id="@+id/song_name"
+        android:id="@+id/song_name_online"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/song_history"
+        android:layout_below="@id/song_history_online"
         android:layout_marginStart="10dp"
         android:layout_toEndOf="@id/album_art_layout"
         android:fontFamily="@font/nunito_sans"
@@ -56,12 +56,12 @@
         android:textSize="@dimen/text_big" />
 
     <TextView
-        android:id="@+id/song_album"
+        android:id="@+id/song_album_online"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/song_name"
+        android:layout_below="@id/song_name_online"
         android:layout_marginStart="10dp"
-        android:layout_toEndOf="@id/album_art_layout"
+        android:layout_toEndOf="@id/album_art_layout_online"
         android:fontFamily="@font/nunito_sans"
         android:maxLines="1"
         android:textColor="@color/colorTextMed"

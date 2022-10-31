@@ -3,19 +3,11 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        debug {
-            storeFile file('/home/atul/StudioProjects/keys/music_player_lite.jks')
-            storePassword 'musicplayerlite'
-            keyAlias 'musicplayerlite'
-            keyPassword 'musicplayerlite'
-        }
-    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.atul.musicplayer"
+        applicationId "com.nong.musicplayer"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 8
