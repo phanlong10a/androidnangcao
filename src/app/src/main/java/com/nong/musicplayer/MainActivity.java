@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void run() {
                     progressDialog = new ProgressDialog(MainActivity.this);
-                    progressDialog.setMessage("Cho tao 1 ti");
+                    progressDialog.setMessage("loading.......");
                     progressDialog.setCancelable(false);
                     progressDialog.show();
                 }
@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity
 
 
             try {
-                URL url = new URL("https://api-music-ap.herokuapp.com/api/getAllSong");
+                URL url = new URL("http://13.212.58.90:5000/api/getAllSong");
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity
 
                         OnlineSong onlineSong1 = new OnlineSong(artists, title, name_song, null, link, Uri.parse(thumbnail), _id);
                         Music music = new Music(artists, title, name_song, null, link, link, 2022, 0, 0, 2022, ThreadLocalRandom.current().nextLong(100), 1, 1,Uri.parse(thumbnail));
-                        System.out.println(onlineSong1);
+                        System.out.println(music);
                         listMusicOnline.add(onlineSong1);
                         songList.add(music);
                     }

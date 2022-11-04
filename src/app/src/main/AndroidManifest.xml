@@ -13,6 +13,7 @@
         android:name="com.nong.musicplayer.App"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
